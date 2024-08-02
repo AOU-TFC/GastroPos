@@ -1,0 +1,24 @@
+{
+  "admin_sidebar": [
+    {
+      "text": "Dashboard",
+      "url": "/admin/dashboard",
+      "type": "link"
+    },
+    {
+      "text": "Staff",
+      "url": "/admin/staff",
+      "type": "link"
+    },
+    {
+      "text": "Products",
+      "url": "/admin/products",
+      "type": "link"
+    },
+    {
+      "text": "Reports",
+      "url": "/admin/reports",
+      "type": "link"
+    }
+  ]
+}

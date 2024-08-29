@@ -1,0 +1,13 @@
+.admin-Container {
+  background-color: #121212;
+  color: #ecf0f1;
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-content {
+  flex-grow: 1;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 5%;
+}

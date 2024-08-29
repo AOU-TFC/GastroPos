@@ -1,0 +1,65 @@
+.products-Container {
+  margin-left: 10%;
+  background-color: #121212;
+}
+
+.products-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.products-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.products-form input,
+.products-form select {
+  color: #d35400; /* Sets the text color */
+  padding: 0.4rem; /* Adds padding inside the input */
+  width: 20%; /* Sets the input width */
+  height: 20px; /* Sets the input height */
+  border-radius: 1rem; /* Rounds the corners */
+  border: solid 1.5px #d35400; /* Sets the border color and width */
+  background-color: #121212; /* Sets the background color */
+  outline: #d35400;
+}
+.products-form select {
+  height: 35px;
+  width: 21%;
+}
+
+.products-form select:focus {
+  border: solid 1.5px #d35400;
+  outline: #d35400;
+}
+
+/* Styling for placeholder text within input fields */
+.products-form input::placeholder {
+  color: #d35400; /* Sets the placeholder text color */
+  opacity: 0.7; /* Adjusts the opacity of the placeholder text */
+}
+
+/* Styling for the form button */
+.products-form button {
+  width: 10%; /* Sets the button width */
+  background-color: #d35400; /* Sets the background color */
+  color: #121212; /* Sets the text color */
+  padding: 0.5rem; /* Adds padding inside the button */
+  border: 1px solid transparent; /* Sets a transparent border to maintain size on hover */
+  border-radius: 1rem; /* Rounds the corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Styling for the form button on hover */
+.products-form button:hover {
+  cursor: pointer; /* Changes cursor to pointer */
+  border: 1px solid #a03f00; /* Sets the border color */
+  color: #a03f00; /* Changes the text color */
+  background-color: #121212; /* Changes the background color */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}

@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Sidebar from "Components/Sidebar";
+import RoutesWithContexts from "Routes/RoutesWithContexts";
 
 function App() {
   return (
     <BrowserRouter>
-      <Sidebar />
+      <RoutesWithContexts />
     </BrowserRouter>
   );
 }

@@ -1,13 +1,27 @@
 .admin-Container {
   background-color: #121212;
+  /* Sets the background color of the container to a dark shade (#121212). */
+
   color: #ecf0f1;
+  /* Sets the text color inside the container to a light shade (#ecf0f1). */
+
   display: flex;
+  /* Applies Flexbox layout to the container, allowing child elements to be arranged in a flexible layout. */
+
   min-height: 100vh;
+  /* Ensures that the container takes up at least 100% of the viewport height (full height of the screen). */
 }
 
 .admin-content {
   flex-grow: 1;
+  /* Allows the content to grow and fill available space within the flex container. */
+
   width: 80%;
+  /* Sets the width of the content area to 80% of the parent container's width. */
+
   margin-top: 5%;
+  /* Adds a top margin of 5% of the parent's height, creating spacing above the content. */
+
   margin-left: 5%;
+  /* Adds a left margin of 5% of the parent's width, creating spacing to the left of the content. */
 }

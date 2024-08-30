@@ -1,65 +1,132 @@
 .products-Container {
   margin-left: 10%;
+  /* Adds a left margin of 10% of the parent container's width, creating spacing from the left edge. */
+
   background-color: #121212;
+  /* Sets the background color of the container to a dark shade (#121212). */
 }
 
 .products-Content {
   display: flex;
+  /* Applies Flexbox layout to the content container, enabling flexible item arrangement. */
+
   flex-direction: column;
+  /* Arranges child elements in a vertical column. */
+
   justify-content: center;
+  /* Centers child elements along the vertical axis of the container. */
+
   gap: 10px;
+  /* Adds a gap of 10px between child elements. */
 }
 
 .products-form {
   display: flex;
+  /* Applies Flexbox layout to the form container. */
+
   flex-direction: column;
+  /* Arranges child elements in a vertical column. */
+
   justify-content: center;
+  /* Centers child elements along the vertical axis of the container. */
+
   align-items: center;
+  /* Centers child elements along the horizontal axis of the container. */
+
   gap: 10px;
+  /* Adds a gap of 10px between form elements. */
 }
+
 .products-form input,
 .products-form select {
-  color: #d35400; /* Sets the text color */
-  padding: 0.4rem; /* Adds padding inside the input */
-  width: 20%; /* Sets the input width */
-  height: 20px; /* Sets the input height */
-  border-radius: 1rem; /* Rounds the corners */
-  border: solid 1.5px #d35400; /* Sets the border color and width */
-  background-color: #121212; /* Sets the background color */
+  color: #d35400;
+  /* Sets the text color inside input fields and select elements to a shade of orange (#d35400). */
+
+  padding: 0.4rem;
+  /* Adds padding inside the input fields and select elements for better spacing and appearance. */
+
+  width: 20%;
+  /* Sets the width of input fields and select elements to 20% of the parent container's width. */
+
+  height: 20px;
+  /* Sets the height of input fields to 20px. */
+
+  border-radius: 1rem;
+  /* Rounds the corners of input fields and select elements by 1rem. */
+
+  border: solid 1.5px #d35400;
+  /* Sets the border color and width for input fields and select elements to the same shade of orange (#d35400) with a width of 1.5px. */
+
+  background-color: #121212;
+  /* Sets the background color of input fields and select elements to a dark shade (#121212). */
+
   outline: #d35400;
+  /* Sets the outline color to match the border color (#d35400) for a consistent look. */
 }
+
 .products-form select {
   height: 35px;
+  /* Increases the height of select elements to 35px. */
+
   width: 21%;
+  /* Sets the width of select elements to 21% of the parent container's width, slightly wider than input fields. */
 }
 
 .products-form select:focus {
   border: solid 1.5px #d35400;
+  /* Applies the same border style on focus, ensuring the border color and width remain consistent. */
+
   outline: #d35400;
+  /* Sets the outline color to match the border color (#d35400) on focus. */
 }
 
 /* Styling for placeholder text within input fields */
 .products-form input::placeholder {
-  color: #d35400; /* Sets the placeholder text color */
-  opacity: 0.7; /* Adjusts the opacity of the placeholder text */
+  color: #d35400;
+  /* Sets the color of the placeholder text to the same shade of orange (#d35400). */
+
+  opacity: 0.7;
+  /* Adjusts the opacity of the placeholder text to make it slightly transparent. */
 }
 
 /* Styling for the form button */
 .products-form button {
-  width: 10%; /* Sets the button width */
-  background-color: #d35400; /* Sets the background color */
-  color: #121212; /* Sets the text color */
-  padding: 0.5rem; /* Adds padding inside the button */
-  border: 1px solid transparent; /* Sets a transparent border to maintain size on hover */
-  border-radius: 1rem; /* Rounds the corners */
-  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  width: 10%;
+  /* Sets the width of the button to 10% of the parent container's width. */
+
+  background-color: #d35400;
+  /* Sets the background color of the button to the same shade of orange (#d35400). */
+
+  color: #121212;
+  /* Sets the text color of the button to the dark shade (#121212) to contrast with the background color. */
+
+  padding: 0.5rem;
+  /* Adds padding inside the button for better spacing and appearance. */
+
+  border: 1px solid transparent;
+  /* Sets a transparent border to maintain the button's size on hover. */
+
+  border-radius: 1rem;
+  /* Rounds the corners of the button by 1rem. */
+
+  transition: all 0.3s ease-in-out;
+  /* Adds a smooth transition effect for all properties over 0.3 seconds. */
 }
 
 /* Styling for the form button on hover */
 .products-form button:hover {
-  cursor: pointer; /* Changes cursor to pointer */
-  border: 1px solid #a03f00; /* Sets the border color */
-  color: #a03f00; /* Changes the text color */
-  background-color: #121212; /* Changes the background color */
-  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  cursor: pointer;
+  /* Changes the cursor to a pointer when hovering over the button, indicating it's clickable. */
+
+  border: 1px solid #a03f00;
+  /* Sets the border color to a darker shade of orange (#a03f00) on hover. */
+
+  color: #a03f00;
+  /* Changes the text color to the same darker shade of orange (#a03f00) on hover. */
+
+  background-color: #121212;
+  /* Changes the background color to the dark shade (#121212) on hover, providing a contrast effect. */
+
+  transition: all 0.3s ease-in-out;
+  /* Maintains a smooth transition effect for all properties over 0.3 seconds. */
 }

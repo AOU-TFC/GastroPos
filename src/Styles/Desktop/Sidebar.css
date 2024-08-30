@@ -1,58 +1,128 @@
 .sidebar-Container {
   position: fixed;
+  /* Fixes the sidebar's position to the viewport so it remains in place when scrolling. */
+
   background-color: #383838;
+  /* Sets the background color of the sidebar to a dark gray (#383838). */
+
   width: 10%;
+  /* Sets the sidebar's width to 10% of the viewport width. */
+
   height: 100vh;
+  /* Sets the sidebar's height to 100% of the viewport height. */
+
   display: flex;
+  /* Applies Flexbox layout to the sidebar container. */
+
   flex-direction: column;
+  /* Arranges child elements (sidebar items) in a vertical column. */
+
   justify-content: space-around;
+  /* Distributes space around child elements along the vertical axis. */
+
   align-items: center;
+  /* Centers child elements horizontally within the sidebar. */
 }
 
 .sidenav-list {
   width: 100%;
+  /* Sets the list width to 100% of the sidebar container width. */
+
   list-style: none;
+  /* Removes default list styling (bullets or numbers) from the list items. */
+
   display: flex;
+  /* Applies Flexbox layout to the list, enabling flexible arrangement of list items. */
+
   flex-direction: column;
+  /* Arranges list items in a vertical column. */
+
   align-items: center;
+  /* Centers list items horizontally within the list. */
+
   justify-content: center;
+  /* Centers list items vertically within the list container. */
+
   gap: 0.5rem;
+  /* Adds a gap of 0.5rem between list items. */
 }
 
 .sidenav-list li {
   width: 100%;
+  /* Sets each list item width to 100% of the list width. */
 }
 
 .sidenav-list li a,
 .sidenav-list li span {
   display: flex;
+  /* Applies Flexbox layout to anchor and span elements within list items. */
+
   align-items: center;
+  /* Centers content within the flex container vertically. */
+
   justify-content: center;
+  /* Centers content within the flex container horizontally. */
+
   width: 100%;
+  /* Sets the width of anchor and span elements to 100% of their parent list item width. */
+
   padding: 1rem 0.3rem 1rem 0;
+  /* Adds padding inside the elements: 1rem top and bottom, 0.3rem right, and 0 left. */
+
   text-decoration: none;
+  /* Removes the default underline from anchor tags. */
+
   color: #cd3500;
+  /* Sets the text color to a shade of orange (#cd3500). */
+
   transition: all 0.1s ease-in-out;
+  /* Adds a smooth transition effect for all properties over 0.1 seconds. */
+
   text-shadow: 2px 2px 5px #121212;
+  /* Adds a shadow effect to the text with a dark shade (#121212) for better visibility. */
 }
 
 .sidenav-list li a:hover,
 .sidenav-list li span:hover {
   cursor: pointer;
+  /* Changes the cursor to a pointer when hovering over anchor or span elements. */
+
   background-color: rgb(205, 53, 0, 0.5);
+  /* Sets a semi-transparent background color on hover with a lighter shade of orange. */
+
   color: #bcbcbc;
+  /* Changes the text color to a light gray (#bcbcbc) on hover. */
+
   border-radius: 0px 10px 10px 0px;
+  /* Rounds the top-right and bottom-right corners of the element by 10px. */
+
   text-shadow: none;
+  /* Removes the text shadow on hover for a cleaner look. */
+
   transition: all 0.2s ease-in-out;
+  /* Adds a smooth transition effect for all properties over 0.2 seconds on hover. */
+
   box-shadow: 2px 2px 8px #121212;
+  /* Adds a shadow effect around the element on hover with a dark shade (#121212). */
 }
 
 .sidenav-list li a.active,
 .sidenav-list li span.active {
   background-color: #cd3500;
+  /* Sets the background color to the shade of orange (#cd3500) for active elements. */
+
   border-radius: 0px 10px 10px 0px;
+  /* Rounds the top-right and bottom-right corners of the element by 10px for active state. */
+
   color: #a3a3a3;
+  /* Changes the text color to a light gray (#a3a3a3) for active elements. */
+
   text-shadow: none;
+  /* Removes the text shadow for active elements. */
+
   transition: all 0.2s ease-in-out;
+  /* Adds a smooth transition effect for all properties over 0.2 seconds for the active state. */
+
   box-shadow: 2px 2px 5px #121212;
+  /* Adds a shadow effect around the element for the active state with a dark shade (#121212). */
 }

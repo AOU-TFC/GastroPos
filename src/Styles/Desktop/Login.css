@@ -1,0 +1,156 @@
+/* Container for the login form */
+.Login {
+  background-color: #121212; /* Set background color to black */
+  height: 100vh; /* Set page height to full monitor height */
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Aligns children in a column */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
+}
+
+/* Container for the login form content */
+.login-content {
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Aligns children in a column */
+  gap: 1rem; /* Adds a gap of 1 rem between children */
+}
+
+/* Container for email and password fields */
+.mail-field,
+.pass-field {
+  position: relative; /* Positions children relative to this container */
+}
+
+/* Styling for email input field */
+.mail-input {
+  width: 15rem; /* Sets the width to 15 rem */
+  border: solid 1.5px #d35400; /* Adds a border with specified color and width */
+  border-radius: 1rem; /* Rounds the corners */
+  background: none; /* Removes background */
+  padding: 0.3rem; /* Adds padding inside the input */
+  font-size: 0.9rem; /* Sets the font size */
+  color: #a03f00; /* Sets the text color */
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Smooth border transition */
+}
+
+/* Styling for email label */
+.mail-label {
+  position: absolute; /* Positions label absolutely within the relative container */
+  left: 5%; /* Positions label from the left */
+  color: #d35400; /* Sets the label color */
+  pointer-events: none; /* Disables pointer events */
+  transform: translateY(0.2rem); /* Translates the label vertically */
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+/* Styling for email input when focused or valid */
+.mail-input:focus,
+input:valid {
+  outline: none; /* Removes default outline */
+  border: 1.5px solid #d35400; /* Keeps the border consistent */
+}
+
+/* Styling for email label when input is focused or valid */
+.mail-input:focus ~ .mail-label,
+input:valid ~ .mail-label {
+  transform: translateY(-50%) scale(0.8); /* Moves and scales the label */
+  background-color: #121212; /* Sets the background color of the label */
+  padding: 0 0.2em; /* Adds padding around the label text */
+  color: #a03f00; /* Changes the label color */
+}
+
+/* Styling for password input field */
+.pass-input {
+  width: 15rem; /* Sets the width to 15 rem */
+  border: solid 1.5px #d35400; /* Adds a border with specified color and width */
+  border-radius: 1rem; /* Rounds the corners */
+  background: none; /* Removes background */
+  padding: 0.3rem; /* Adds padding inside the input */
+  font-size: 0.9rem; /* Sets the font size */
+  color: #a03f00; /* Sets the text color */
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Smooth border transition */
+}
+
+/* Styling for password label */
+.pass-label {
+  position: absolute; /* Positions label absolutely within the relative container */
+  left: 5%; /* Positions label from the left */
+  color: #d35400; /* Sets the label color */
+  pointer-events: none; /* Disables pointer events */
+  transform: translateY(0.2rem); /* Translates the label vertically */
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+/* Styling for password input when focused or valid */
+.pass-input:focus,
+.pass-input:valid {
+  outline: none; /* Removes default outline */
+  border: 1.5px solid #d35400; /* Keeps the border consistent */
+}
+
+/* Styling for password label when input is focused or valid */
+.pass-input:focus ~ .pass-label,
+.pass-input:valid ~ .pass-label {
+  transform: translateY(-50%) scale(0.8); /* Moves and scales the label */
+  background-color: #121212; /* Sets the background color of the label */
+  padding: 0 0.2em; /* Adds padding around the label text */
+  color: #a03f00; /* Changes the label color */
+}
+
+/* Styling for checkbox to show password */
+.show-pass-check:checked {
+  accent-color: #a03f00; /* Sets the accent color of the checkbox */
+}
+
+/* Styling for the label of the show password checkbox */
+.show-pass-label {
+  color: #d35400; /* Sets the color of the label */
+}
+
+/* Container for submit button and other elements */
+.submitting-field {
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: row; /* Aligns children in a row */
+  justify-content: center; /* Centers children horizontally */
+  align-items: center; /* Centers children vertically */
+  gap: 2%; /* Adds a gap of 2% between children */
+}
+
+/* Styling for the login button */
+.login-btn {
+  width: 30%; /* Sets the width to 30% of the container */
+  background-color: #d35400; /* Sets the background color */
+  color: #121212; /* Sets the text color */
+  padding: 0.5rem; /* Adds padding inside the button */
+  border: 1px solid transparent; /* Set a transparent border */
+  border-radius: 1rem; /* Rounds the corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Styling for the login button on hover */
+.login-btn:hover {
+  cursor: pointer; /* Changes cursor to pointer */
+  border: 1px solid #a03f00; /* Adds a border */
+  color: #a03f00; /* Changes the text color */
+  background-color: #121212; /* Changes the background color */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Styling for the not registered text */
+.not-registered {
+  color: #d35400; /* Sets the text color */
+}
+
+/* Styling for the span inside the not registered text */
+.not-registered span {
+  text-align: center; /* Centers the text */
+  text-decoration: underline; /* Underlines the text */
+  transition: all 0.1s ease-in-out; /* Smooth transition for all properties */
+}
+
+/* Styling for the span inside the not registered text on hover */
+.not-registered span:hover {
+  cursor: pointer; /* Changes cursor to pointer */
+  color: #a03f00; /* Changes the text color */
+  transition: all 0.1s ease-in-out; /* Smooth transition for all properties */
+}

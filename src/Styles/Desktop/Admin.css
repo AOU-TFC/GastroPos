@@ -16,12 +16,9 @@
   flex-grow: 1;
   /* Allows the content to grow and fill available space within the flex container. */
 
-  width: 80%;
-  /* Sets the width of the content area to 80% of the parent container's width. */
-
-  margin-top: 5%;
+  margin: 5% 15%;
   /* Adds a top margin of 5% of the parent's height, creating spacing above the content. */
 
-  margin-left: 5%;
+  margin-right: 5%;
   /* Adds a left margin of 5% of the parent's width, creating spacing to the left of the content. */
 }

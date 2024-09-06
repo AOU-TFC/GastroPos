@@ -1,0 +1,82 @@
+.staff-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-box{
+    min-width: 300px;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem 1.5rem;
+    gap: 1rem; /*1rem = 16px */
+    text-align: center;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container .input{
+    background: none;
+    outline: none;
+    width: 300px;
+    position: relative;
+    border: 1px solid #d35400;
+    border-radius: 10rem;
+    padding: .5rem;
+    color: #d35400;
+
+
+}
+
+.form button{
+    background-color: #d35400;
+    color: #fff;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 10rem;
+    /* border: 0; */
+    padding: .5rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form button:hover{
+    border: 1px solid #d35400;
+    background-color: #121212;
+    color: #d35400;
+}
+
+.status-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    color: #d35400;
+}
+
+.status-wrapper span{
+    display: flex;
+    gap: .5rem;
+
+}
+
+.status-wrapper span input[type=radio]{
+    accent-color: #d35400;
+}

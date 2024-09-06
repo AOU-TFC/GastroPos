@@ -12,8 +12,8 @@ import Admin from "Pages/Admin";
 
 import Products from "Components/Admin/Products";
 // Importing the Products component, which is probably a part of the Admin section, handling product-related functionality.
-
-import { Auhtenticated } from "Utilities/Authentication";
+import { Authenticated } from "Utilities/Authentication";
+import Staff from "Components/Admin/Staff";
 // Importing the Auhtenticated component or function from "Utilities/Authentication" which likely checks user authentication status.
 
 function RoutesWithContexts() {
@@ -23,7 +23,7 @@ function RoutesWithContexts() {
     <CategoriesProvider>
       {/* Wrapping the entire component tree in CategoriesProvider to ensure that the categories context is available to all child components. */}
 
-      <Auhtenticated />
+      <Authenticated />
       {/* Rendering the Auhtenticated component, which likely checks if the user is authenticated and possibly redirects them if not. */}
 
       <Routes>
@@ -36,6 +36,7 @@ function RoutesWithContexts() {
           <Route path="products" element={<Products />} />
           {/* Defining a nested Route for "products", which renders the Products component inside the Admin component.
               This means "/admin/products" will render the Products component. */}
+          <Route path="staff" element={<Staff />} />
         </Route>
       </Routes>
     </CategoriesProvider>

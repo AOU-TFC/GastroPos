@@ -1,0 +1,67 @@
+.table-wrapper {
+    width: 100%;
+}
+
+table {
+    display: grid;
+    overflow: hidden;
+    table-layout: fixed;
+    border-radius: 10px;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    table-layout: auto;
+    overflow-x: auto;
+}
+
+table thead{
+    background-color: #313131;
+    color: #d35400;
+}
+
+table thead tr {
+    display: grid;
+}
+
+table th,
+table td {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+table td {
+    border-top: 0.5px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table tbody tr {
+    display: grid;
+}
+
+table tbody tr:hover {
+    background-color: #212121;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.delete-btn {
+    color: #e10d05;
+
+}
+
+.edit-btn {
+    color: #d35400;
+}
